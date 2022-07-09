@@ -1,5 +1,4 @@
-const { createNote, validateNote } = require('../../lib/notes');
-const { notes } = require('../../db/db.json');
+const { getNotes, createNote, validateNote, checkId, deleteNote } = require('../../lib/notes');
 
 const router = require('express').Router();
 
@@ -7,7 +6,7 @@ const router = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
 
 router.get('/notes', (req, res) => {
-    let results = notes;
+    let results = getNotes();
     res.json(results);
 });
 
@@ -23,9 +22,20 @@ router.post('/notes', (req, res) => {
     }
     else {
         // add note to json file and notes array in this function
-        const note = createNote(req.body, notes);
+        const note = createNote(req.body);
 
         res.json(note);
+    }
+});
+
+router.delete("/notes/:id", (req, res) => {
+    if (checkId(req.params.id)){
+    res.status(400).send('Error. This note does not exist.');
+    }
+    else {
+        const newNotesArray = deleteNote(req.params.id);
+        
+        res.json(newNotesArray);
     }
 });
 

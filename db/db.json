@@ -1,24 +1,24 @@
 {
   "notes": [
     {
-      "title": "Test Title",
-      "text": "Test text",
-      "id": "5d561c16-839c-414d-b6e3-2ad65754ab4b"
+      "title": "Test 1",
+      "text": "This is a simple test",
+      "id": "a58a5369-f619-4ec7-a6bb-26475116d5ec"
     },
     {
-      "title": "Test Title New",
-      "text": "New test :) hello",
-      "id": "96837518-66f2-494b-83c9-95b303f2139e"
+      "title": "Test 2",
+      "text": "The note taker works",
+      "id": "d618da46-caa3-4922-b8a4-fe5510cc486f"
     },
     {
-      "title": "Test Title New",
-      "text": "New test hello",
-      "id": "a909dd21-7edc-4596-b020-11640b016377"
+      "title": "Delete",
+      "text": "Also works :)",
+      "id": "45c52005-c700-422c-a014-298949095962"
     },
     {
-      "title": "Test Title New",
-      "text": "hello there",
-      "id": "b0db4586-7ba4-4ebf-972b-cab235eb11aa"
+      "title": "Try it",
+      "text": ":)",
+      "id": "544ceb08-9fd1-4898-8140-e85c8fb68780"
     }
   ]
 }
