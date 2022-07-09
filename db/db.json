@@ -1,6 +1,24 @@
-[
+{
+  "notes": [
     {
-        "title":"Test Title",
-        "text":"Test text"
+      "title": "Test Title",
+      "text": "Test text",
+      "id": "5d561c16-839c-414d-b6e3-2ad65754ab4b"
+    },
+    {
+      "title": "Test Title New",
+      "text": "New test :) hello",
+      "id": "96837518-66f2-494b-83c9-95b303f2139e"
+    },
+    {
+      "title": "Test Title New",
+      "text": "New test hello",
+      "id": "a909dd21-7edc-4596-b020-11640b016377"
+    },
+    {
+      "title": "Test Title New",
+      "text": "hello there",
+      "id": "b0db4586-7ba4-4ebf-972b-cab235eb11aa"
     }
-]
+  ]
+}

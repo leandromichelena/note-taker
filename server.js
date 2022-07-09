@@ -1,4 +1,5 @@
-// const api = require('./routes/api');
+// links to the modularized routes stored in the routes folder
+const api = require('./routes/api');
 const html = require('./routes/html');
 
 const express = require('express');
@@ -16,7 +17,7 @@ app.use(express.static('public'));
 
 // parse incoming JSON data
 app.use(express.json());
-// app.use('/api', api);
+app.use('/api', api);
 app.use('/', html);
 
 app.listen(PORT, () => {
